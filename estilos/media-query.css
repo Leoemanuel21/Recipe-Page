@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1440px){
+    main{
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        background-color: white;
+    }
+    main > picture > img{
+        width: 100%;
+    }
+}
