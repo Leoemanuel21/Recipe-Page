@@ -33,6 +33,7 @@ body{
 }
 
 main{
+    /*height: 1700px;*/
     width: 100%;
     margin: auto;
     background-color: white;
@@ -42,8 +43,33 @@ main > picture > img{
     width: 100%;
 }
 
+section.flex-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+article{
+    padding: 25px;
+}
+
+
+article.Preparation{
+    background-color: var(--cor6);
+    margin: 0px 25px;
+}
+
+article.Preparation > h3{
+    color: var(--cor5);
+}
+
+article.Preparation li::marker{
+    color:  var(--cor5);
+}
+
 h1{
     font-size: 2.5em; 
+    line-height: 1em;
     font-family: 'YoungSerif-Regular';
     font-weight: lighter;
     padding: 25px 0px;
@@ -67,30 +93,27 @@ ul, ol{
     padding-left: 25px;
 }
 
-article{
-    padding: 25px;
-}
-
-
-article.Preparation{
-    background-color: var(--cor6);
-    margin: 0px 25px;
-}
-
-article.Preparation > h3{
-    color: var(--cor5);
-}
-
-article.Preparation li::marker{
-    color:  var(--cor5);
-}
-
 ul.linha{
     border-bottom: 1px solid rgba(0, 0, 0, 0.212);
     padding-top: 30px;
 }
 
-ul.nutrition{
+div.nutrition{
+    width: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 12px 0;
+    padding-left: 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.212);
-    padding: 0px 0px;
+}
+
+div.nutrition:last-child{
+    border-bottom: none;
+}
+
+span.value{
+    width: 60px;
+    color: var(--cor4);
+    font-weight: bold;
 }
